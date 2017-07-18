@@ -1,0 +1,23 @@
+﻿Hibernate
+
+- Remember copy 14 jar lib file to folder lib in WEB-INF
+- Remember copy hibernate.cfg.xml file to folder src and cofig info in this
+- In configure("hibernate.cfg.xml") should rename is hibernate.cfg.xml, if change this name, 
+in hibernate config file must be change the same
+- If you see configure(), it's meaning default in () is "hibernate.cfg.xml"
+
+- Database: Create database named Java and run script170717.sql to import database
+
+- In hibernate, if handling and change database, you must use transaction
+- Crietia: work with data without write HQL
+- Why should use Sql Server tool to combine with hibernate because it's the most difficult
+
+- Table in sql Regardless (không phân biệt) of uppercase, lowercase but entity Distinguish (có phân biệt) of uppercase, lowercase:
++ Class in Eclipse is singular (số ít)
++ Table in Sql Server is plurality (số nhiều)
+
+- Result of HQL query: list of Object array
+
+- Compare get vs load:
++ get: read all of record in database, load data direct form entity, use more memory than use load but query faster
++ load: only read data from database, do not load data direct from entity, use less memory than use load but query slower
